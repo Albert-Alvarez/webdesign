@@ -46,7 +46,7 @@
 }
 
 .masthead{
-    background-image: url("/assets/img/albert-alvarez-webdesign-background.jpg");    
+    background-image: url("{{ '/assets/img/albert-alvarez-webdesign-background.jpg' | relative_url }}");
     height: 100vh;
     min-height: 450px;
     background-position: center center;
