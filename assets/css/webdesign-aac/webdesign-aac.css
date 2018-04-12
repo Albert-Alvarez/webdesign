@@ -15,14 +15,20 @@
     color: rgba(248, 249, 250, 0.75);
 }
 
+.masthead  a.nav-link {
+    color: rgba(248, 249, 250, 0.75);
+}
+
 .navbar-dark .navbar-nav .nav-link:focus,
-.navbar-dark .navbar-nav .nav-link:hover {
+.navbar-dark .navbar-nav .nav-link:hover,
+.masthead  a.nav-link:focus,
+.masthead  a.nav-link:hover {
     color: #f8f9fa;
 }
 
 #mainNav .navbar-nav>li.nav-item>a.nav-link.active,
 #mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active {
-    color: #F05F40!important;
+    color: #F05F40 !important;
 }
 
 #mainNav.navbar-shrink {
@@ -48,9 +54,86 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
-  
-  /* HiDPI images */
+}
+
+.btn {
+    border: 2px solid transparent;
+    border-color: #F05F40;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 20px;
+    min-height: 10px;
+    padding: 10px 20px;
+}
+
+.btn-primary:hover {
+    background-color: #F05F40;
+    border-color: #F05F40;
+}
+
+.masthead .row:last-child {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 12px;
+    width: 100%;
+}
+
+footer {
+    padding: 50px 0px;
+    background-color: #212529!important;
+}
+
+footer .author-name,
+footer .attribution{
+    color: #f8f9fa;
+}
+
+footer .attribution{
+    color: #f8f9fa;
+    font-size: 12px;
+}
+
+.circle-icon {
+    background: rgba(255,255,255,0.2);
+    padding:10px;
+    border-radius: 50%;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+
+.circle-icon:hover {
+    background: rgba(255,255,255,0.1);
+
+}
+
+footer .social-network {
+    display: inline-block;
+}
+footer .social-networks,
+footer div.social-network>a{
+    color: rgba(248, 249, 250, 0.75);
+    font-size: 1.25em;
+}
+
+
+footer a:hover,
+footer a:active,
+footer div.social-network>a:hover,
+footer div.social-network>a:active {
+    color: #f8f9fa;
+}
+
+.typed-cursor {
+    animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #f8f9fa;    }
+    49%{    color: #f8f9fa;; }
+    50%{    color: transparent; }
+    100%{    color:transparent;  }
+}
+
+/* HiDPI images */
 
 @media only screen and (min--moz-device-pixel-ratio: 2),
 only screen and (-o-min-device-pixel-ratio: 2/1),
@@ -58,5 +141,5 @@ only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
     .masthead{
         background-image: url("/assets/img/albert-alvarez-webdesign-background-2x.jpg");    
-      }
+    }
 }
