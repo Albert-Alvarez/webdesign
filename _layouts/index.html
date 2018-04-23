@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: " es " }}">
+<html lang="{{ page.language }}">
 
 
 {%- include head.html -%}
@@ -9,6 +9,7 @@
 
 
     {%- include header.html -%}
+    {%- include language_modal.html -%}
     
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis risus arcu, vel accumsan elit congue ac. Duis vel arcu sapien. Nam ut sapien eget mauris vehicula tempus. Curabitur elementum porttitor turpis at maximus.

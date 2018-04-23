@@ -39,6 +39,14 @@
 <script src="{{ '/assets/js/easing/jquery.easing.compatibility.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/scrollreveal/scrollreveal.min.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/magnific-popup/jquery.magnific-popup.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/morphing-modal/main.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/morphing-modal/modernizr.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/morphing-modal/velocity.min.js' | relative_url }}"></script>
 
 <!-- Custom scripts for this template -->
-<script src="{{ '/assets/js/webdesign-aac/webdesign-aac.js' | relative_url }}"></script>
+{% if page.language == "es" %}
+<script src="{{ '/es/assets/js/webdesign-aac/webdesign-aac.js' | relative_url }}"></script>
+{% endif %}
+{% if page.language == "en" %}
+<script src="{{ '/en/assets/js/webdesign-aac/webdesign-aac.js' | relative_url }}"></script>
+{% endif %}

@@ -29,6 +29,7 @@ linkedin_username: aalvarca
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-language-plugin
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -43,6 +44,7 @@ plugins:
 #   - vendor/ruby/
 
 # Jekyll Language Plugin
+
 languages: ['es', 'en']
 language_data: data.lang.%%
 language_includes_dir: _i18n

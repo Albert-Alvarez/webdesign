@@ -1,3 +1,8 @@
+---
+languages:
+- es
+- en
+---
 (function($) {
   "use strict"; // Start of use strict
 
@@ -60,7 +65,7 @@
   $('.popup-gallery').magnificPopup({
     delegate: 'a',
     type: 'image',
-    tLoading: 'Loading image #%curr%...',
+    tLoading: "{% t 'js.loading-image' %} #%curr%...",
     mainClass: 'mfp-img-mobile',
     gallery: {
       enabled: true,
@@ -68,7 +73,7 @@
       preload: [0, 1]
     },
     image: {
-      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+      tError: '<a href="%url%">{% t "js.loading-image-1" %} #%curr%</a> {% t "js.loading-image-2" %}.'
     }
   });
 
@@ -77,7 +82,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
   new Typed('#typed3-1', {
-    strings: ["Hi!^500 I'm Albert^1000 and I'm here to help you with^500"],
+    strings: ["{% t 'js.masthead-message' %}"],
     typeSpeed: 40,
     backSpeed: 40,
     backDelay: 2000,
@@ -86,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
     onComplete: function () {
       document.querySelectorAll(".typed-cursor")[0].style.display = "none";
       new Typed('#typed3-2', {
-        strings: ["web design.", "user interface.", "Wordpress development."],
+        strings: ["{% t 'js.web-design' %}.", "{% t 'js.user-interface' %}.", "{% t 'js.wordpress' %}."],
         typeSpeed: 40,
         backSpeed: 40,
         backDelay: 3000,
@@ -96,4 +101,4 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   });
 
-});
+}); 

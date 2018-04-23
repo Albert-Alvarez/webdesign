@@ -1,0 +1,24 @@
+js:
+  loading-image: Cargando imagen
+  loading-image-1: La imagen
+  loading-image-2: no puede cargarse
+  masthead-message: Hola!^500 Soy Albert^1000 y estoy aquí para ayudarte con^500
+  web-design: el diseño web
+  user-interface: la interfaz de usuario
+  wordpress: el desarrollo en Wordpress
+
+header:
+  button: Déjame ayudarte con tu proyecto
+  message: Conoce qué puedo hacer por ti
+  nav: 
+    about: Sobre mí
+    services: Servicios
+    portfolio: Portafolio
+    contact: Contacto
+    language: Idioma
+
+modal:
+  lang:
+    question: Seleccione su idioma
+    spanish: Español
+    english: Inglés

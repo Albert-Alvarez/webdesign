@@ -57,11 +57,14 @@
 }
 
 .btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
     border: 2px solid transparent;
     border-color: #F05F40;
     background-color: rgba(0,0,0,0.2);
-    border-radius: 20px;
-    min-height: 10px;
+    border-radius: 40px;
+    min-height: 20px;
     padding: 10px 20px;
 }
 
@@ -122,6 +125,64 @@ footer div.social-network>a:hover,
 footer div.social-network>a:active {
     color: #f8f9fa;
 }
+
+.modal-backdrop.show {
+    background-color: #212529; 
+    opacity: 1;
+ }
+
+ .modal {
+     color: #f8f9fa;
+ }
+
+ .modal a{
+    pointer-events: all;
+    color: rgba(248, 249, 250, 0.75);
+    text-decoration-line: none;
+    transition: all 0.2s;
+ }
+
+ .modal a:hover{
+    color: #f8f9fa;
+ }
+
+ .modal a.close {
+     position: fixed;
+     top:20px;
+     right:20px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    color: #f8f9fa;
+    font-size : 47px;
+    font-weight: 100;
+    text-decoration: none;
+    text-shadow: none;
+    background-image: url("/assets/img/cd-icon-close.svg");
+    background-position: center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    background-color: #343840;
+    border-radius:50%;    
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.modal a.close:hover {
+    background-color: #616770;
+
+}
+
+.modal-dialog{
+    max-width: 100%;
+    margin: 0px;
+}
+ 
+ a.close{
+     color: #f8f9fa;
+     opacity: 1;
+ }
 
 .typed-cursor {
     animation:blinkingText 0.8s infinite;
