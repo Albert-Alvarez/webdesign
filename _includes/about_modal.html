@@ -1,0 +1,23 @@
+<div class="modal fade" id="about-modal" data-backdrop="static" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <a class="close" data-dismiss="modal" aria-label="Close" href="#about-modal">Close</a>
+        <div class="container my-auto">
+            <div class="row">
+                <div class="col-12 text-center">
+                        <h1>{% t 'modal.about.title' %}</h1>
+                </div>            
+                <div class="col-5 d-none d-sm-block">
+                    <div class="sticky-top">
+                        <img class="img-fluid padding-top" src="{{ '/assets/img/self-portrait.jpg' | relative_url }}" alt="It's me!">
+                    </div>
+                </div>
+                <div class="col-12 d-block d-sm-none">
+                        <img class="img-fluid padding-top" src="{{ '/assets/img/self-portrait.jpg' | relative_url }}" alt="It's me!">
+                </div>
+                <div class="col-12 col-lg-6 offset-lg-1 padding-top">
+                    {% t 'modal.about.text' %}
+                </div>    
+            </div>
+        </div>            
+    </div>
+</div>

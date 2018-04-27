@@ -22,3 +22,48 @@ modal:
     question: Seleccione su idioma
     spanish: Español
     english: Inglés
+  about:
+    title: Encantado de conocerte
+    text: <p>Hola</p>
+  contact:
+    title: Empecemos
+    text: Cuéntame sobre ti y tu proyecto y me pondré en contacto contigo en la máxima brevedad posible.
+    name: Nombre*
+    email: Dirección email*
+    phone: Número de teléfono
+    website: Website
+    message: "Cuéntame sobre tu proyecto: ¿De qué se trata? ¿Para qué lo necesitas? ¿Cuál es tu objetivo? ¿Cómo te puedo ayudar? (Detalles sobre tiempos de entrega y presuspuesto serán bienvenidos.)*"
+
+about:
+  title: Este soy yo
+  button: Ponme cara
+  text: <p>Texto sobre mí.</p>
+
+services:
+  title: Qué podemos hacer juntos
+  code:
+    title: Código
+    text: Texto código.
+  wordpress:
+    title: Desarrollo en Wordpress
+    text: Texto Wordpress.
+  other:
+    title: Otros servicios de integración
+    text: Texto otros.
+
+portfolio:
+  title: Echa un vistazo a mis trabajos
+  button: Visita la página
+  guzman:
+    title: Guzmán Gastronomía
+    type: Magento e-Commerce con integración ERP
+    text: Guzmán texto.
+  feliu:
+    title: Feliu Packaging
+    type: Desarrollo Wordpress
+    text: Texto Feliu.
+
+contact:
+  title: ¿Quieres que trabajemos juntos?
+  text: Actualmente acepto nuevos proyecto y me encantaría saber sobre el tuyo. Por favor, tómate unos minutos para contarme sobre él.
+  button: Contáctame

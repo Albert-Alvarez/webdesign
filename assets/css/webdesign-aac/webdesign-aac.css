@@ -1,4 +1,19 @@
 @charset "utf-8";
+.override p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #6C757D;
+    font-weight: 300;
+}
+
+.override header {
+    font-family: "-apple-system,BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.override section {
+    padding: 60px 0px;
+}
+
 .navbar-toggler {
     border: 0px;
 }
@@ -15,19 +30,15 @@
     color: rgba(248, 249, 250, 0.75);
 }
 
-.masthead  a.nav-link {
+.masthead a.nav-link {
     color: rgba(248, 249, 250, 0.75);
 }
 
-.navbar-dark .navbar-nav .nav-link:focus,
-.navbar-dark .navbar-nav .nav-link:hover,
-.masthead  a.nav-link:focus,
-.masthead  a.nav-link:hover {
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover, .masthead a.nav-link:focus, .masthead a.nav-link:hover {
     color: #f8f9fa;
 }
 
-#mainNav .navbar-nav>li.nav-item>a.nav-link.active,
-#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active {
+#mainNav .navbar-nav>li.nav-item>a.nav-link.active, #mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active {
     color: #F05F40 !important;
 }
 
@@ -35,25 +46,39 @@
     background-color: #212529;
 }
 
-#mainNav {
+.override #mainNav {
     transition: all 1s;
     -webkit-transition: all 1s;
 }
 
-.navbar-dark .overwritte-bootstrap.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#F8F9FA' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-
+.override #mainNav a {
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
 }
 
-.masthead{
+.navbar-dark .overwritte-bootstrap.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#F8F9FA' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.masthead {
+    min-height: 420px;
     background-image: url("/assets/img/albert-alvarez-webdesign-background.jpg");
-    height: 100vh;
     min-height: 450px;
+    height: 100vh;
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    position: relative;
+}
+
+.override .masthead h1 {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
 }
 
 .btn {
@@ -62,7 +87,7 @@
     font-size: 14px;
     border: 2px solid transparent;
     border-color: #F05F40;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 40px;
     min-height: 20px;
     padding: 10px 20px;
@@ -86,74 +111,68 @@ footer {
     background-color: #212529!important;
 }
 
-footer .author-name,
-footer .attribution{
+footer .author-name, footer .attribution {
     color: #f8f9fa;
 }
 
-footer .attribution{
+footer .attribution {
     color: #f8f9fa;
     font-size: 12px;
 }
 
 .circle-icon {
-    background: rgba(255,255,255,0.2);
-    padding:10px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
     border-radius: 50%;
     transition: all 0.2s;
     -webkit-transition: all 0.2s;
 }
 
 .circle-icon:hover {
-    background: rgba(255,255,255,0.1);
-
+    background: rgba(255, 255, 255, 0.1);
 }
 
 footer .social-network {
     display: inline-block;
 }
-footer .social-networks,
-footer div.social-network>a{
+
+footer .social-networks, footer div.social-network>a {
     color: rgba(248, 249, 250, 0.75);
     font-size: 1.25em;
 }
 
-
-footer a:hover,
-footer a:active,
-footer div.social-network>a:hover,
-footer div.social-network>a:active {
+footer a:hover, footer a:active, footer div.social-network>a:hover, footer div.social-network>a:active {
     color: #f8f9fa;
 }
 
 .modal-backdrop.show {
-    background-color: #212529; 
+    background-color: #212529;
     opacity: 1;
- }
+}
 
- .modal {
-     color: #f8f9fa;
- }
+.modal {
+    color: #f8f9fa;
+}
 
- .modal a{
+.modal a {
     pointer-events: all;
     color: rgba(248, 249, 250, 0.75);
     text-decoration-line: none;
     transition: all 0.2s;
- }
+}
 
- .modal a:hover{
+.modal a:hover {
     color: #f8f9fa;
- }
+}
 
- .modal a.close {
-     position: fixed;
-     top:20px;
-     right:20px;
+.modal a.close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
     transition: all 0.2s;
     -webkit-transition: all 0.2s;
     color: #f8f9fa;
-    font-size : 47px;
+    font-size: 47px;
     font-weight: 100;
     text-decoration: none;
     text-shadow: none;
@@ -163,7 +182,7 @@ footer div.social-network>a:active {
     width: 40px;
     height: 40px;
     background-color: #343840;
-    border-radius:50%;    
+    border-radius: 50%;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -171,36 +190,173 @@ footer div.social-network>a:active {
 
 .modal a.close:hover {
     background-color: #616770;
-
 }
 
-.modal-dialog{
+.modal-dialog {
     max-width: 100%;
     margin: 0px;
 }
- 
- a.close{
-     color: #f8f9fa;
-     opacity: 1;
- }
+
+a.close {
+    color: #f8f9fa;
+    opacity: 1;
+}
 
 .typed-cursor {
-    animation:blinkingText 0.8s infinite;
+    animation: blinkingText 0.8s infinite;
 }
-@keyframes blinkingText{
-    0%{     color: #f8f9fa;    }
-    49%{    color: #f8f9fa;; }
-    50%{    color: transparent; }
-    100%{    color:transparent;  }
+
+@keyframes blinkingText {
+    0% {
+        color: #f8f9fa;
+    }
+    49% {
+        color: #f8f9fa;
+        ;
+    }
+    50% {
+        color: transparent;
+    }
+    100% {
+        color: transparent;
+    }
+}
+
+.row.row-grid [class*="col-"]+[class*="col-"] {
+    margin-top: 15px;
+}
+
+@media (min-width: 1200px) {
+    .row.row-grid [class*="col-lg-"]+[class*="col-lg-"] {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .row.row-grid [class*="col-md-"]+[class*="col-md-"] {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .row.row-grid [class*="col-sm-"]+[class*="col-sm-"] {
+        margin-top: 0;
+    }
 }
 
 /* HiDPI images */
 
-@media only screen and (min--moz-device-pixel-ratio: 2),
-only screen and (-o-min-device-pixel-ratio: 2/1),
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-device-pixel-ratio: 2) {
-    .masthead{
-        background-image: url("/assets/img/albert-alvarez-webdesign-background-2x.jpg");    
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    .masthead {
+        background-image: url("/assets/img/albert-alvarez-webdesign-background-2x.jpg");
     }
+}
+
+.override h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    color: #212529;
+    margin-bottom: 25px;
+}
+
+.override h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #212529;
+}
+
+.override h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #B2C6CD;
+}
+
+.override h3::before {
+    content: "• ";
+    color: #F05F40;
+}
+
+.override section#contact {
+    background-color: #F05F40;
+}
+
+.override section#contact h1, .override section#contact p {
+    color: white;
+}
+
+.override section#services {
+    background: #EEEEEE;
+}
+
+.override section .btn {
+    color: #212529;
+    background-color: transparent;
+    margin-top: 30px;
+}
+
+.override section#contact .btn {
+    margin-top: 9px;
+}
+
+.override .btn:focus, .override .btn:active, .override .btn-primary:focus, .override .btn-primary:active, .override .btn-primary:not(:disabled):not(.disabled).active, .override .btn-primary:not(:disabled):not(.disabled):active{
+    outline: none !important;
+    box-shadow: none;
+    background-color: #F05F40;
+    color: white;
+    border-color: #F05F40;
+}
+
+.override section .btn-primary:hover {
+    background-color: #F05F40;
+    border-color: #F05F40;
+    color: white;
+}
+
+.override section .btn.btn-inv {
+    background-color: #F05F40;
+    border-color: white;
+    color: white;
+}
+
+
+.override .btn.btn-inv:focus, .override .btn.btn-inv:active, .override .btn-primary.btn-inv:focus, .override .btn-primary.btn-inv:active, .override .btn-primary.btn-inv:not(:disabled):not(.disabled).active, .override .btn-primary.btn-inv:not(:disabled):not(.disabled):active,
+.override section .btn.btn-inv:hover,
+.override section .btn.btn-inv:active,
+.override section .btn.btn-inv:focus,
+.override section .btn-primary.btn-inv:hover,
+.override section .btn-primary.btn-inv:active,
+.override section .btn-primary.btn-inv:focus {
+    background-color: white;
+    border-color: white;
+    color: #F05F40;
+}
+
+hr {
+    margin: 50px 0px;
+}
+
+img.service-icon{
+    max-height: 80px;
+    margin-bottom:20px;
+}
+
+.override .modal .container {
+    max-width: 750px;
+}
+
+.override .modal .container h1,
+.override .modal .container p {
+    color: white;
+}
+
+.override .modal .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.padding-top {
+    padding-top: 50px;
 }
