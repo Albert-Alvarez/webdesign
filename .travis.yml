@@ -5,3 +5,8 @@ deploy:
   keep-history: true
   on:
     branch: gh-pages
+language: ruby
+rvm:
+ - 2.2
+ - jruby
+ - rbx-3
