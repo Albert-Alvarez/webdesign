@@ -9,4 +9,4 @@ deploy:
 language: ruby
 rvm:
 - 2.2
-script: "bundle exec jekyll build && echo "webdesign.albertalvarezcarulla.com" > /_site/CNAME"
+script: "bundle exec jekyll build && echo \"webdesign.albertalvarezcarulla.com\" > ./_site/CNAME"
