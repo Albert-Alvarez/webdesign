@@ -1,4 +1,16 @@
 @charset "utf-8";
+
+.navbar .navbar-brand svg{
+    fill: rgba(248, 249, 250, 0.75);
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+
+.navbar .navbar-brand svg:hover,
+.navbar .navbar-brand:hover{
+    fill: rgba(248, 249, 250, 1);
+}
+
 .override p {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
