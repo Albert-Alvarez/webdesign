@@ -388,3 +388,8 @@ img.service-icon {
     outline: none !important;
     box-shadow: none;
 }
+
+.override .modal-content{
+    background-color: #212529;
+    border-color: #212529;
+}
