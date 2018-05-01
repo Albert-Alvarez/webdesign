@@ -33,6 +33,7 @@ modal:
     phone: Phone number
     website: Website
     message: "Tell me about your project: What is it? Why are you doing it? What do you hope to accomplish? How can I help? (Timeline and budget details are also appreciated.)*"
+    button: Send
 
 
 about:
@@ -68,3 +69,6 @@ contact:
   title: Do you want to work together?
   text: I'm currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about it.
   button: Contact me
+
+footer:
+  attribution: Handmade by me

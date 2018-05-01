@@ -2,9 +2,23 @@
 
     <div class="container">
         <div class="row row-grid" id="about">
-            <div class="col-lg-6 col-12">
-                <div class="author-name text-lg-left text-center">ALBERT ÁLVAREZ CARULLA</div>
-                <div class="attribution text-lg-left text-center">Handmade by me &copy; 2018</div>
+            <div class="col-lg-6 col-12 text-lg-left text-center">
+                <a class="js-scroll-trigger" href="#page-top">
+                    <svg class="d-inline-block align-top" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    height="30px" viewBox="0 0 114.977 52" enable-background="new 0 0 114.977 52" xml:space="preserve">               
+                        <path fill="#f8f9fa" d="M112.956,13.697c-1.348-3.574-3.381-6.509-6.1-8.807c-2.086-1.781-4.605-3.242-7.559-3.922
+                            C97.188,0.477,94.129,0,90.122,0h-10.93h-6.5h-0.355L64.25,33.117c-1.055,4.219-1.911,7.958-2.566,11.215
+                            c-0.821-5.695-2.157-11.777-4.008-18.246L50.293,0h-8.227l-9.809,34.805c-0.234,0.844-1.008,4.02-2.32,9.527
+                            c-0.61-3.492-1.336-7.008-2.18-10.547L19.918,0h-0.286h-6.589l9.422,36h0.009l0.606,2.352L26.653,52h6.906l10.934-39.5
+                            c0.469-1.664,0.972-3.794,1.512-6.162c0.164,0.75,0.703,2.938,1.617,6.22L58.485,52h6.574L77.272,7h12.744
+                            c4.055,0,6.996,0.123,8.824,0.826c2.531,0.984,4.681,2.81,6.451,5.704c1.77,2.895,2.654,6.98,2.654,12.371
+                            c0,3.891-0.452,7.173-1.354,9.903c-0.902,2.73-2.162,4.89-3.779,6.507c-1.148,1.148-2.689,2.073-4.623,2.706S93.59,46,90.192,46
+                            h-11.5h-6v6h18.273c3.117,0,5.876-0.293,8.279-0.879c2.402-0.585,4.453-1.447,6.152-2.584c1.699-1.137,3.264-2.695,4.693-4.676
+                            c1.429-1.98,2.602-4.482,3.516-7.506s1.371-6.492,1.371-10.406C114.977,21.356,114.303,17.271,112.956,13.697z"/>
+                        <polygon fill="#f8f9fa" points="11.258,31 13.661,22.106 10.419,9.722 4.691,33.348 0,52 5.5,52 9.887,36 17.297,36 15.989,31 "/>
+                    </svg>
+                </a>
+                <div class="attribution text-lg-left text-center">{% t 'footer.attribution' %} &copy; {{ 'now' | date: "%Y" }}</div>
             </div>
             <div class="col-lg-6 col-12 social-networks text-lg-right text-center mt-lg-0 mt-3git">
                 {% if site.linkedin_username %}

@@ -97,3 +97,11 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 }); 
+
+$('#mainNav').on('show.bs.collapse', function () {
+  $(this).css('background-color', '#212529');
+})
+
+$('#mainNav').on('hide.bs.collapse', function () {
+  $(this).css('background-color', '');
+})

@@ -33,6 +33,7 @@ modal:
     phone: Número de teléfono
     website: Website
     message: "Cuéntame sobre tu proyecto: ¿De qué se trata? ¿Para qué lo necesitas? ¿Cuál es tu objetivo? ¿Cómo te puedo ayudar? (Detalles sobre tiempos de entrega y presuspuesto serán bienvenidos.)*"
+    button: Enviar
 
 about:
   title: Este soy yo
@@ -67,3 +68,6 @@ contact:
   title: ¿Quieres que trabajemos juntos?
   text: Actualmente acepto nuevos proyecto y me encantaría saber sobre el tuyo. Por favor, tómate unos minutos para contarme sobre él.
   button: Contáctame
+
+footer:
+  attribution: Hecha a mano por mí
